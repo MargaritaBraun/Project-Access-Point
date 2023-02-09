@@ -69,15 +69,17 @@ body {
     background-color: rgba(51, 190, 125, 0.9);
     display: flex;
     align-items: center;
+    padding: 0px 45px 0 25px;
 }
 
 .logo {
     width: 25%;
     height: 100%;
-    padding: 10px 10px 10px 40px;
+    padding: 10px 65px 10px 70px;
+    display: flex;
 }
 .logo__image {
-    background-image: url(img/logoItog.png);
+    background-image: url(img/icons-ass.png);
     background-repeat: no-repeat;
     background-size: contain;
     display: block;
@@ -85,12 +87,26 @@ body {
     height: 100%;
 }
 
+.logo__text {
+  display: block;
+  font-family: 'Oswald';
+  font-weight: bold;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  color: rgb(11, 129, 37);
+  padding: 12px 0 0 0;
+}
+
+.logo__text-padding {
+  padding: 0px 0 0 13px;
+}
+
 .humburger__menu {
     display: none;
 }
 
 .nav__list {
-    width: 1000px;
+    width: 900px;
     display: flex;
     justify-content: space-between;
 }
@@ -301,13 +317,13 @@ body {
 
   .slider .slick-arrow.slick-prev{
     left: 0;
-    background: url('img/slider/left.png') 0 0 / 100% no-repeat;
+    background: url('img/icon-left1.png') 0 0 / 100% no-repeat;
     margin-left: 20px;
   }
 
   .slider .slick-arrow.slick-next{
     right: 0;
-    background: url('img/slider/right.png') 0 0 / 100%  no-repeat;
+    background: url('img/icon-right1.png') 0 0 / 100%  no-repeat;
     margin-right: 20px;
   }
   .slider .slick-dots {
