@@ -417,10 +417,177 @@ body {
   /* about section */
    .about__title {
     font-family: Ubuntu;
-    font-style: italic;
+    font-style: normal;
     font-weight: 700;
     font-size: 3rem;
     line-height: 50px;
     text-align: center;
-    color: #2e0d86;
+    color: #057534;
+    padding: 20px 0 0 0;
    }
+
+   .block__column {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+   }
+
+   .block__title {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 50px;
+    text-align: left;
+    padding: 50px 10px 50px 50px;
+   }
+
+   .block__paragraph {
+    width: 300px;
+    font-family: Ubuntu;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 2.5rem;
+    line-height: 50px;
+    text-align: center;
+    color: #2e0d86;
+    text-shadow: 10px 5px 5px rgb(68, 49, 49);
+   }
+
+   .other {
+    color: #0b9147;
+   }
+   
+   .about-flameX {
+    width: 500px;
+    height: 350px;
+   }
+
+   .about-flameY {
+    width: 300px;
+    height: 405px;
+   }
+
+   .about-Foto1 {
+    background: url('img/fest1-about.jpg') 0 0 no-repeat;
+    background-size: cover;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 6px solid #5815c4;
+    border-radius: 40px;
+   }
+
+   .about-Foto2 {
+    background: url('img/fest2-about.jpg') 0 0 no-repeat;
+    background-size: cover;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 6px solid #5815c4;
+    border-radius: 40px;
+   }
+
+   .about-Foto3 {
+    background: url('img/fest3-about.jpg') 0 0 no-repeat;
+    background-size: cover;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 6px solid #5815c4;
+    border-radius: 40px;
+   }
+
+/* about button section */
+   .about__button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   }
+
+   .button-location  {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: transparent;
+    border: 2px solid #e74c3c;
+    border-radius: 0.6em;
+    color: #e74c3c;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2px;
+    margin: 20px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+  }
+  .button-location:hover, .button-location:focus {
+    color: #fff;
+    outline: 0;
+  }
+
+  .first {
+    border-color: #165e34;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #165e34 inset, 0 0 0 0 #165e34;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+  }
+  .first:hover {
+    box-shadow: 0 0 10px 0 #165e34 inset, 0 0 10px 4px #165e34;
+    color: black;
+  }
+
+  .about-belov1 {
+    background: url('img/belovt1-about.jpg') 0 0 no-repeat;
+    background-size: cover;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 6px solid #5815c4;
+    border-radius: 40px;
+  }
+
+  .about-belov2{
+    background: url('img/belovt2-about.jpg') 0 0 no-repeat;
+    background-size: cover;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 6px solid #5815c4;
+    border-radius: 40px;
+  }
+
+  .about-belov3{
+    background: url('img/belovt3-about.jpg') 0 0 no-repeat;
+    background-size: cover;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 6px solid #5815c4;
+    border-radius: 40px;
+  }
+
+  .second {
+    border-color: #340670;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #340670 inset, 0 0 0 0 #340670;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+  }
+  .second:hover {
+    box-shadow: 0 0 10px 0 #165e34 inset, 0 0 10px 4px #340670;
+    color: black;
+  }
