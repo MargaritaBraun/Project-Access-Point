@@ -2,6 +2,34 @@ html {
     font-size: 10px;
 }
 
+@font-face{
+  font-family: 'Oswald';
+  src: url('fonts/Oswald-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'Ubuntu';
+  src: url('fonts/Ubuntu-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'Ubuntu';
+  src: url('fonts/Ubuntu-Italic.ttf');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face{
+  font-family: 'Ubuntu';
+  src: url('fonts/Ubuntu-BoldItalic.ttf');
+  font-weight: bold;
+  font-style: italic;
+}
+
 /* Обнуление */
 *,
 *::before,
@@ -23,9 +51,9 @@ a {
 
 body {
     background-color: hwb(84 63% 10%);
-    font-size: 1.6rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0 auto;
+    font-size: 2rem;
+    font-family: 'Ubuntu';
 }
 
 .wrapper {
@@ -33,6 +61,8 @@ body {
     margin: auto;
     display: block;
 }
+
+/* header */
 
 .header__container {
     height: 100px;
@@ -66,18 +96,24 @@ body {
 }
 
 .nav-item {
-    font-size: 1.6rem;
-    line-height: 2.5rem;
-    font-family: Inika;
-    font-weight: 400;
-    cursor: pointer;
-    color: black;
+    padding: 0 20px 0 0;
+}
+
+.item__style {
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  font-family: 'Oswald';
+  font-weight: bold;
+  cursor: pointer;
+  color: rgb(72, 24, 184);
 }
 
 .nav-item a:hover {
     color: #E06733;
     font-weight: bold;
   }
+
+  /* wellcome section */
 
   .wellcome__image {
     background-image: url(img/gomel-ptiz.jpg);
@@ -100,10 +136,10 @@ body {
   }
 
   .welcome-title {
-    font-family: 'Inter';
-    font-style: normal;
+    font-family: 'Ubuntu';
+    font-style: italic;
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 3rem;
     line-height: 50px;
     color: #717171;
     text-align: center;
@@ -118,14 +154,49 @@ body {
     height: 100%;
   }
 
-  .advantage__title {
+  /* advantage section */
+
+
+  .advantage__container {
     padding: 10px 10px 10px 40px;
   }
+  .advantage__title {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 2.5rem;
+    color: #717171;
+    text-align: center;
+    padding: 30px 0 40px 0;
+  }
+
+  .advantage__text {
+    font-family: Ubuntu;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 50px;
+    color: #2ac025;
+    text-align: center;
+    padding: 30px 0 20px 0;
+  }
+
+  /* free section */
 
   .free__column {
     width: 40rem;
     height: 30rem;
     padding: 10px 10px 10px 10px;
+  }
+
+  .free__text {
+    width: 40rem;
+    height: 30rem;
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
   }
 
   .free__image {
