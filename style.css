@@ -2,6 +2,34 @@ html {
     font-size: 10px;
 }
 
+@font-face{
+  font-family: 'Oswald';
+  src: url('fonts/Oswald-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'Ubuntu';
+  src: url('fonts/Ubuntu-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'Ubuntu';
+  src: url('fonts/Ubuntu-Italic.ttf');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face{
+  font-family: 'Ubuntu';
+  src: url('fonts/Ubuntu-BoldItalic.ttf');
+  font-weight: bold;
+  font-style: italic;
+}
+
 /* Обнуление */
 *,
 *::before,
@@ -23,9 +51,9 @@ a {
 
 body {
     background-color: hwb(84 63% 10%);
-    font-size: 1.6rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0 auto;
+    font-size: 2rem;
+    font-family: 'Ubuntu';
 }
 
 .wrapper {
@@ -33,6 +61,8 @@ body {
     margin: auto;
     display: block;
 }
+
+/* header */
 
 .header__container {
     height: 100px;
@@ -66,18 +96,24 @@ body {
 }
 
 .nav-item {
-    font-size: 1.6rem;
-    line-height: 2.5rem;
-    font-family: Inika;
-    font-weight: 400;
-    cursor: pointer;
-    color: black;
+    padding: 0 20px 0 0;
+}
+
+.item__style {
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  font-family: 'Oswald';
+  font-weight: bold;
+  cursor: pointer;
+  color: rgb(72, 24, 184);
 }
 
 .nav-item a:hover {
     color: #E06733;
     font-weight: bold;
   }
+
+  /* wellcome section */
 
   .wellcome__image {
     background-image: url(img/gomel-ptiz.jpg);
@@ -100,13 +136,16 @@ body {
   }
 
   .welcome-title {
-    font-family: 'Inter';
-    font-style: normal;
+    font-family: 'Ubuntu';
+    font-style: italic;
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 3rem;
     line-height: 50px;
-    color: #717171;
     text-align: center;
+    background-image: linear-gradient(45deg, #2e0d86, #ee4b2b);;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
   }
 
   .wellcome__image-out {
@@ -118,14 +157,60 @@ body {
     height: 100%;
   }
 
-  .advantage__title {
+  /* advantage section */
+
+
+  .advantage__container {
     padding: 10px 10px 10px 40px;
   }
+  .advantage__title {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 2.5rem;
+    color: #717171;
+    text-align: center;
+    padding: 30px 0 40px 0;
+  }
+
+  .advantage__text {
+    font-family: Ubuntu;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 50px;
+    color: #2ac025;
+    text-align: center;
+    padding: 20px 0 20px 0;
+  }
+
+  .advantage__paragraph {
+    font-family: Ubuntu;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 50px;
+    color: #167213;
+    text-align: center;
+    padding: 10px 0 30px 0;
+  }
+
+  /* free section */
 
   .free__column {
     width: 40rem;
     height: 30rem;
     padding: 10px 10px 10px 10px;
+  }
+
+  .free__text {
+    width: 40rem;
+    height: 30rem;
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
   }
 
   .free__image {
@@ -141,3 +226,201 @@ body {
     display: flex;
     justify-content: space-between;
   }
+
+  .free__title {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 2.5rem;
+    color: #717171;
+  }
+
+  .free__paragraph {
+    font-family: Ubuntu;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 50px;
+    color: #2ac025;
+  }
+
+   /* make__foto section */
+  .makeFoto__text {
+    text-align: center;
+    padding: 10px 0 30px 0;
+  }
+
+  .makeFoto__title {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 2.5rem;
+    color: #717171;
+  }
+
+  .makeFoto__paragraph {
+    font-family: Ubuntu;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 50px;
+    color: #2ac025;
+  }
+
+ /* slider section */
+  img {
+    width: 350px;
+    height: 500px;
+  }
+  .slick-list {
+    overflow: hidden;
+  }
+  .slick-track {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  /* конкретный slider  */
+
+  .slider {
+    position: relative;
+    padding: 0px 60px;
+  }
+
+  .slider .slick-arrow{
+    position: absolute;
+    top: 50%;
+    /*если нужно поднять стрелку то можно задать margin-top с отриц числом, если выше, и полож если ниже*/
+    z-index: 10;
+    font-size: 0;
+    width: 30px;
+    height: 50px;
+  }
+
+  .slider .slick-arrow.slick-prev{
+    left: 0;
+    background: url('img/slider/left.png') 0 0 / 100% no-repeat;
+    margin-left: 20px;
+  }
+
+  .slider .slick-arrow.slick-next{
+    right: 0;
+    background: url('img/slider/right.png') 0 0 / 100%  no-repeat;
+    margin-right: 20px;
+  }
+  .slider .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .slider .slick-dots li {
+  list-style: none;
+  margin: 0px 10px;
+  }
+
+  .slider .slick-dots button {
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background-color: aqua;
+    border-radius: 50%;
+  }
+
+  .slider .slick-dots li.slick-active button {
+    background-color: transparent;
+    border: 1px solid #fff;
+  }
+
+  .slider__item {
+  margin: 0 30px 0 30px 0;
+  }
+
+  .slick-slide  {
+    padding: 0 40px;
+  }
+
+   /* layout__makeFoto */
+
+   .layout__makeFoto {
+    display: flex;
+    padding: 20px 50px 20px 50px;
+    justify-content: space-evenly;
+   }
+
+   .layout__column {
+    width: 250px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/fon1.jpg);
+    background-size: cover;
+    padding: 0 20px 0 20px;
+    border: 6px solid transparent;
+    border-image: linear-gradient(to left top,#adf2f7 10%,  transparent 30%, transparent 70%, #adf2f7 90%);
+    border-image-slice: 1;
+   }
+
+   .layout__icon {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Ubuntu;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 50px;
+    text-shadow: 10px 5px 5px rgb(68, 49, 49);
+    background-image: linear-gradient(45deg, #2e0d86, #ee4b2b);;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+   }
+
+   .icon-foto1 {
+    background: url('img/icon-love.png') 0 0 no-repeat;
+    background-size:contain;
+   display: block;
+   width: 50px;
+   height: 50px;
+   text-align: center;
+   }
+
+   .icon-foto2 {
+    background: url('img/icon-popul.png') 0 0 no-repeat;
+    background-size:contain;
+   display: block;
+   width: 50px;
+   height: 50px;
+   }
+
+   .icon-foto3 {
+    background: url('img/icon-star.png') 0 0 no-repeat;
+    background-size:contain;
+   display: block;
+   width: 50px;
+   height: 50px;
+   }
+
+   .icon-foto4 {
+    background: url('img/icon-wow.png') 0 0 no-repeat;
+    background-size:contain;
+   display: block;
+   width: 50px;
+   height: 50px;
+   }
+
+  /* about section */
+   .about__title {
+    font-family: Ubuntu;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 50px;
+    text-align: center;
+    color: #2e0d86;
+   }

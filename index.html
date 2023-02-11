@@ -17,10 +17,10 @@
         <div class="menu">
             <nav class="nav__menu nav">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="">Основная страница</a></li>
-                    <li class="nav__item"><a href="">Парк Фестивальный</a></li>
-                    <li class="nav__item"><a href="">Сквер Белого</a></li>
-                    <li class="nav__item"><a href="">Парк Центральный</a></li>
+                    <li class="nav__item"><a href="" class="item__style">Основная страница</a></li>
+                    <li class="nav__item"><a href="" class="item__style">Парк Фестивальный</a></li>
+                    <li class="nav__item"><a href="" class="item__style">Сквер Белого</a></li>
+                    <li class="nav__item"><a href="" class="item__style">Парк Центральный</a></li>
                 </ul>
             </nav>
         </div>
@@ -32,7 +32,7 @@
     </div>
     </header>
     <main>
-        <section>
+        <section class="wellcome">
             <wrapper class="wrapper">
             <div class="layout-3-column">
                 <div class="welcome-column">
@@ -50,27 +50,113 @@
         </section>
         <section class="advantage">
             <wrapper class="wrapper">
-            <div class="advantage__title">
-                <h2>Вы должны это увидеть</h2>
-                <p>Положительные моменты</p>
-                <p>Тут будут описаны плюсы посещения данных локаций</p>
+            <div class="advantage__container">
+                <h2 class="advantage__title">Вы должны это увидеть</h2>
+                <p class="advantage__text">Положительные моменты</p>
+                <p class="advantage__paragraph">Тут будут описаны плюсы посещения данных локаций</p>
             </div>
             </wrapper>
         </section>
         <section class="free">
             <wrapper class="wrapper">
                 <div class="layout-2-column">
-                    <div class="free__column">
-                        <h2>Абсолютно бесплатно</h2>
-                        <p>Наверное, самое главное преимущество - это то, что локации со свободным доступом</p>
+                    <div class="free__text">
+                        <h2 class="free__title">Абсолютно бесплатно</h2>
+                        <p class="free__paragraph">Наверное, самое главное преимущество - это то, что локации со свободным доступом</p>
                     </div>
                     <div class="free__column">
                         <span class="free__image"></span>
                     </div>
-                    
                 </div>
             </wrapper>
         </section>
+        <section class="make__foto">
+            <div class="makeFoto__text">
+                <h2 class="makeFoto__title">Запечатли своё местоположение</h2>
+                <p class="makeFoto__paragraph">Места идеально подойдут для разных фото</p>
+            </div>
+            <div class="slider">
+                <div class="slider__item">
+                    <img src="img/slider/slider1.jpg" alt="foto1">
+                </div>
+                <div class="slider__item">
+                    <img src="img/slider/slider2.jpg" alt="foto2">
+                </div>
+                <div class="slider__item">
+                    <img src="img/slider/slider3.jpg" alt="foto3">
+                </div>
+                <div class="slider__item">
+                    <img src="img/slider/slider4.jpg" alt="foto4">
+                </div>
+                <div class="slider__item">
+                    <img src="img/slider/slider5.jpg" alt="foto5">
+                </div>
+            </div>
+            <div class="layout-4-column">
+                <div class="layout__makeFoto">
+                    <div class="layout__column">
+                        <p class="layout__icon">
+                            Качественные фото
+                            <span class="icon-foto1"></span>
+                        </p>
+                    </div>
+                    <div class="layout__column">
+                        <p class="layout__icon">
+                            Привлечено внимание
+                            <span class="icon-foto2"></span>
+                        </p>
+                    </div>
+                    <div class="layout__column">
+                        <p class="layout__icon">
+                            Расположение аудитории
+                            <span class="icon-foto3"></span>
+                        </p>
+                    </div>
+                    <div class="layout__column">
+                        <p class="layout__icon">
+                            Яркие образы
+                            <span class="icon-foto4"></span>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section >
+            <wrapper class="wrapper">
+                <div class="layout-3-column">
+                    <div class="makeFoto__column"><span class="makeFoto__var1"></span></div>
+                    <div class="makeFoto__column">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="makeFoto__column"><span class='makeFoto__var2'></span></div>
+                </div>
+            </wrapper>
+        </section>
+        <section class="about">
+            <wrapper class="wrapper">
+                <div class="about__container">
+                    <div>
+                        <h2 class="about__title">В каждой локации вы найдете, дополнительные возможности для отдыха</h2>
+                    </div>
+                    <div>
+                        <h3>Парк Фестивальный</h3>
+                        <p></p>
+                    </div>
+                    <div>
+                        <h3>Сквер Белого</h3>
+                    </div>
+                    <div>
+                        <h3>Парк Центральный</h3>
+                    </div>
+
+                </div>
+            </wrapper>
+        </section>
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+        <script src="slick.min.js"></script>
+        <script src="script.js"></script>
 </main>
 </body>
 </html>
