@@ -69,15 +69,17 @@ body {
     background-color: rgba(51, 190, 125, 0.9);
     display: flex;
     align-items: center;
+    padding: 0px 45px 0 25px;
 }
 
 .logo {
     width: 25%;
     height: 100%;
-    padding: 10px 10px 10px 40px;
+    padding: 10px 65px 10px 70px;
+    display: flex;
 }
 .logo__image {
-    background-image: url(img/logoItog.png);
+    background-image: url(img/icons-ass.png);
     background-repeat: no-repeat;
     background-size: contain;
     display: block;
@@ -85,12 +87,26 @@ body {
     height: 100%;
 }
 
+.logo__text {
+  display: block;
+  font-family: 'Oswald';
+  font-weight: bold;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  color: rgb(11, 129, 37);
+  padding: 12px 0 0 0;
+}
+
+.logo__text-padding {
+  padding: 0px 0 0 13px;
+}
+
 .humburger__menu {
     display: none;
 }
 
 .nav__list {
-    width: 1000px;
+    width: 900px;
     display: flex;
     justify-content: space-between;
 }
@@ -301,13 +317,13 @@ body {
 
   .slider .slick-arrow.slick-prev{
     left: 0;
-    background: url('img/slider/left.png') 0 0 / 100% no-repeat;
+    background: url('img/icon-left1.png') 0 0 / 100% no-repeat;
     margin-left: 20px;
   }
 
   .slider .slick-arrow.slick-next{
     right: 0;
-    background: url('img/slider/right.png') 0 0 / 100%  no-repeat;
+    background: url('img/icon-right1.png') 0 0 / 100%  no-repeat;
     margin-right: 20px;
   }
   .slider .slick-dots {
@@ -430,6 +446,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    padding: 20px 20px 30px 20px;
    }
 
    .block__title {
@@ -457,7 +474,7 @@ body {
    .other {
     color: #0b9147;
    }
-   
+
    .about-flameX {
     width: 500px;
     height: 350px;
@@ -474,7 +491,7 @@ body {
     display: block;
     width: 100%;
     height: 100%;
-    border: 6px solid #5815c4;
+    border: 6px solid #165e34;
     border-radius: 40px;
    }
 
@@ -484,7 +501,7 @@ body {
     display: block;
     width: 100%;
     height: 100%;
-    border: 6px solid #5815c4;
+    border: 6px solid #165e34;
     border-radius: 40px;
    }
 
@@ -494,7 +511,7 @@ body {
     display: block;
     width: 100%;
     height: 100%;
-    border: 6px solid #5815c4;
+    border: 6px solid #165e34;
     border-radius: 40px;
    }
 
@@ -503,6 +520,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 30px 10px 20px 10px;
+    background-image: url(img/fon1.jpg);
+    background-size: cover;
    }
 
    .button-location  {
@@ -588,6 +608,56 @@ body {
     transition: all 150ms ease-in-out;
   }
   .second:hover {
-    box-shadow: 0 0 10px 0 #165e34 inset, 0 0 10px 4px #340670;
+    box-shadow: 0 0 10px 0 #340670 inset, 0 0 10px 4px #340670;
     color: black;
+  }
+
+  .about-zen1 {
+    background: url('img/zen1-about.jpg') 0 0 no-repeat;
+    background-size: cover;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 6px solid #c40e63;
+    border-radius: 40px;
+  }
+
+  .about-zen2 {
+    background: url('img/zen2-about.jpg') 0 0 no-repeat;
+    background-size: cover;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 6px solid #c40e63;
+    border-radius: 40px;
+  }
+
+  .about-zen3 {
+    background: url('img/zen3-about.jpg') 0 0 no-repeat;
+    background-size: cover;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 6px solid #c40e63;
+    border-radius: 40px;
+  }
+
+  .third {
+    border-color: #c40e63;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #c40e63 inset, 0 0 0 0 #c40e63;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+  }
+  .third:hover {
+    box-shadow: 0 0 10px 0 #c40e63 inset, 0 0 10px 4px #c40e63;
+    color: black;
+  }
+
+  .footer {
+    background-color: #c40e63;
+  }
+
+  .footer__container {
+    height: 100px;
   }

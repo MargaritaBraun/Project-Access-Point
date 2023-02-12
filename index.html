@@ -5,22 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="img/logoFavicon.png">
-    <title>Access Point</title>
+    <link rel="icon" type="image/png" href="img/icons-ass.png">
+    <title>Точка Доступа</title>
 </head>
 <body>
     <header class="header">
         <div class="header__container">
         <diV class="logo">
             <span class="logo__image"></span>
+            <span class="logo__text"><p class="logo__text-padding">Точка</p><p>Доступа</p></span>
         </diV>
         <div class="menu">
             <nav class="nav__menu nav">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="" class="item__style">Основная страница</a></li>
-                    <li class="nav__item"><a href="" class="item__style">Парк Фестивальный</a></li>
-                    <li class="nav__item"><a href="" class="item__style">Сквер Белого</a></li>
-                    <li class="nav__item"><a href="" class="item__style">Парк Центральный</a></li>
+                    <li class="nav__item"><a href="index.html" class="item__style">Основная страница</a></li>
+                    <li class="nav__item"><a href="fest.html" class="item__style">Парк Фестивальный</a></li>
+                    <li class="nav__item"><a href="belov.html" class="item__style">Сквер Белого</a></li>
+                    <li class="nav__item"><a href="zen.html" class="item__style">Парк Центральный</a></li>
                 </ul>
             </nav>
         </div>
@@ -146,7 +147,7 @@
                             <div class="about-flameX"><span class="about-Foto3"></span></div>
                         </div>
                         <div class="about__button">
-                            <button class="button-location first">узнать больше</button>
+                            <button class="button-location first" onclick="location.href='fest.html'">узнать больше</button>
                         </div>
                     </div>
                     <div>
@@ -164,16 +165,38 @@
                            <div class="about-flameX"><span class="about-belov3"></span></div>
                         </div>
                         <div class="about__button">
-                            <button class="button-location second">узнать больше</button>
+                            <button class="button-location second" onclick="location.href='belov.html'">узнать больше</button>
                         </div>
                     </div>
                     <div>
                         <h3 class="block__title">Парк Центральный</h3>
+                        <div class="block__column">
+                            <p class="block__paragraph">Невероятная красота и старинная архитектура</p>
+                           <div class="about-flameX"><span class="about-zen1"></span></div>
+                        </div>
+                        <div class="block__column">
+                            <div class="about-flameX"><span class="about-zen2"></span></div>
+                            <p class="block__paragraph">Здесь проводятся разные мероприятия</p>
+                        </div>
+                        <div class="block__column">
+                            <p class="block__paragraph">Много атракционов</p>
+                           <div class="about-flameX"><span class="about-zen3"></span></div>
+                        </div>
+                        <div class="about__button">
+                            <button class="button-location third" onclick="location.href='zen.html'">узнать больше</button>
+                        </div>
                     </div>
 
                 </div>
             </wrapper>
         </section>
+        <footer class="footer">
+            <wrapper class="wrapper">
+                <div class="footer__container">
+
+                </div>
+            </wrapper>
+        </footer>
         <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
         <script src="slick.min.js"></script>
         <script src="script.js"></script>
