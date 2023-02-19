@@ -50,7 +50,7 @@ a {
 }
 
 body {
-    background-color: hwb(84 63% 10%);
+    background-image: linear-gradient(#88c788 20%, #f5e944 90%, #00ffa2);
     margin: 0 auto;
     font-size: 2rem;
     font-family: 'Ubuntu';
@@ -64,9 +64,12 @@ body {
 
 /* header */
 
+.header {
+  background-color: rgba(51, 190, 125, 0.9);
+}
+
 .header__container {
     height: 100px;
-    background-color: rgba(51, 190, 125, 0.9);
     display: flex;
     align-items: center;
     padding: 0px 45px 0 25px;
@@ -75,7 +78,7 @@ body {
 .logo {
     width: 25%;
     height: 100%;
-    padding: 10px 65px 10px 70px;
+    padding: 10px 65px 10px 0px;
     display: flex;
 }
 .logo__image {
@@ -134,10 +137,12 @@ body {
   .wellcome__image {
     background-image: url(img/gomel-ptiz.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     display: block;
     width: 100%;
     height: 100%;
+    border: 6px solid #5815c4;
+    border-radius: 40px;
   }
 
   .layout-3-column {
@@ -146,9 +151,9 @@ body {
   }
 
   .welcome-column {
-    width: 40rem;
-    height: 30rem;
-    padding: 10px 10px 10px 10px;
+    width: 500px;
+    height: 340px;
+    padding: 50px 10px 10px 10px;
   }
 
   .welcome-title {
@@ -167,10 +172,12 @@ body {
   .wellcome__image-out {
     background-image: url(img/gomel.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     display: block;
     width: 100%;
     height: 100%;
+    border: 6px solid #5815c4;
+    border-radius: 40px;
   }
 
   /* advantage section */
@@ -178,6 +185,7 @@ body {
 
   .advantage__container {
     padding: 10px 10px 10px 40px;
+    background-color: rgb(29 166 207 / 15%);
   }
   .advantage__title {
     font-family: Ubuntu;
@@ -185,7 +193,7 @@ body {
     font-weight: bold;
     font-size: 3rem;
     line-height: 2.5rem;
-    color: #717171;
+    color: #f6fa09;
     text-align: center;
     padding: 30px 0 40px 0;
   }
@@ -196,7 +204,7 @@ body {
     font-weight: 400;
     font-size: 3rem;
     line-height: 50px;
-    color: #2ac025;
+    color: #1e43b9;
     text-align: center;
     padding: 20px 0 20px 0;
   }
@@ -232,10 +240,12 @@ body {
   .free__image {
     background-image: url(img/park\ paskev\ 5.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     display: block;
     width: 100%;
     height: 100%;
+    border: 6px solid #eb18d9;
+    border-radius: 40px;
   }
 
   .layout-2-column {
@@ -249,7 +259,7 @@ body {
     font-weight: bold;
     font-size: 3rem;
     line-height: 2.5rem;
-    color: #717171;
+    color: #812626;
   }
 
   .free__paragraph {
@@ -258,13 +268,14 @@ body {
     font-weight: 400;
     font-size: 2.5rem;
     line-height: 50px;
-    color: #2ac025;
+    color: #f7f30f;
   }
 
    /* make__foto section */
   .makeFoto__text {
     text-align: center;
     padding: 10px 0 30px 0;
+    background-color: rgb(29 166 207 / 15%);
   }
 
   .makeFoto__title {
@@ -273,7 +284,7 @@ body {
     font-weight: bold;
     font-size: 3rem;
     line-height: 2.5rem;
-    color: #717171;
+    color: #e9890d;
   }
 
   .makeFoto__paragraph {
@@ -282,7 +293,7 @@ body {
     font-weight: 400;
     font-size: 2.5rem;
     line-height: 50px;
-    color: #2ac025;
+    color: #bb25c0;
   }
 
  /* slider section */
@@ -447,6 +458,7 @@ body {
     align-items: center;
     justify-content: space-evenly;
     padding: 20px 20px 30px 20px;
+    background-color: rgb(29 166 207 / 15%);
    }
 
    .block__title {

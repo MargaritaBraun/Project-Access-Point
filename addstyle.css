@@ -160,7 +160,7 @@ body {
     line-height: 2.5rem;
     padding: 50px 30px 20px 30px;
     text-align: center;
-    color: #E06733;
+    color: #ceff1c;
   }
 
   .location-paragraph {
@@ -170,7 +170,7 @@ body {
     line-height: 6rem;
     padding: 50px 30px 20px 30px;
     text-align: center;
-    color: #E06733;
+    color: #10ff91;
   }
 
   .layout-2-column {
@@ -198,6 +198,17 @@ body {
     height: 100%;
     border: 6px solid #c40e63;
     border-radius: 40px;
+  }
+
+  .wellcome__image-belov {
+    background: url('img/belov/belov-foto1.jpg') 0 0 no-repeat;
+    background-size: cover;
+    display: block;
+    width: 700px;
+    height: 450px;
+    border: 6px solid #c40e63;
+    border-radius: 40px;
+    margin: 30px 0 0 30px;
   }
 
   .welcome-block {
@@ -314,8 +325,16 @@ body {
     color: #ccfa00;
   }
 
+  .green {
+    color: #0c520c;
+  }
+
   .block-padding {
     padding-top: 100px;
+  }
+
+  .block-padding2 {
+    padding: 30px 10px 10px 30px;
   }
 
   .fest-foto-7 {
@@ -351,4 +370,91 @@ body {
 
   .footer__container {
     height: 100px;
+  }
+
+  /* Сквер белого*/
+
+  .below_container-Foto {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+  }
+
+  .belov-foto2 {
+    background: url('img/belov/belov-foto2.jpg') 0 0 no-repeat;
+    background-size: cover;
+    display: block;
+    width: 250px;
+    height: 400px;
+    border: 6px solid #00f2fa;
+    border-radius: 40px;
+  }
+
+  .belov-foto3 {
+    background: url('img/belov/belov-foto3.jpg') 0 0 no-repeat;
+    background-size: cover;
+    display: block;
+    width: 250px;
+    height: 400px;
+    border: 6px solid #fa00af;
+    border-radius: 40px;
+  }
+
+  .belov-foto4 {
+    background: url('img/belov/belov-foto4.jpg') 0 0 no-repeat;
+    background-size: cover;
+    display: block;
+    width: 250px;
+    height: 400px;
+    border: 6px solid #15fa00;
+    border-radius: 40px;
+  }
+
+  .belov-foto5 {
+    background: url('img/belov/belov-foto5.jpg') 0 0 no-repeat;
+    background-size: cover;
+    display: block;
+    width: 450px;
+    height: 550px;
+    border: 6px solid #15fa00;
+    border-radius: 40px;
+  }
+
+  .belov-foto6 {
+    background: url('img/belov/belov-foto6.jpg') 0 0 no-repeat;
+    background-size: cover;
+    display: block;
+    width: 450px;
+    height: 550px;
+    border: 6px solid #15fa00;
+    border-radius: 40px;
+  }
+
+  .belov-foto7 {
+    background: url('img/belov/belov-foto7.jpg') 0 0 no-repeat;
+    background-size: cover;
+    display: block;
+    width: 450px;
+    height: 356px;
+    border: 6px solid #15fa00;
+    border-radius: 40px;
+  }
+
+  .belov-foto8 {
+    background: url('img/belov/belov-foto8.jpg') 0 0 no-repeat;
+    background-size: cover;
+    display: block;
+    width: 450px;
+    height: 356px;
+    border: 6px solid #15fa00;
+    border-radius: 40px;
+    margin-top: -30px;
+  }
+
+  .info__container-new {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 0 30px 0;
+    margin-top: -40px;
   }
